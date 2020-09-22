@@ -1,0 +1,5 @@
+<h3>Materials</h3>
+
+<% @materials.each do |material| %>
+    <p><%= link_to "#{material.color.capitalize} #{material.name}", material_path(material) %></p>
+<% end %>

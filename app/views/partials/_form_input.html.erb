@@ -1,0 +1,10 @@
+
+<%= form_for @material do |f| %>
+    <%= f.label "name" %>
+    <%= f.text_field :name %>
+
+    <%= f.label "color" %>
+    <%= f.collection_select(:color, Material.all, :color, :color) %>
+
+    <%= f.submit %>
+<% end %>

@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   # get 'jackets/update'
   # get 'jackets/create'
   resources :jackets
+  resources :materials
   
 end

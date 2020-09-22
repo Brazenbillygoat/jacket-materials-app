@@ -1,0 +1,12 @@
+<h3>Create a New Jacket</h3>
+
+<%= form_for @jacket do |f|%>
+  <%= f.label "name" %><br>
+  <%= f.text_field :name %><br><br>
+
+  <%= f.label :made_in %><br>
+  <%= f.collection_select(:made_in, Jacket.all, :made_in, :made_in) %><br><br>
+
+  <%= f.submit "Create Jacket" %>
+
+<% end %>

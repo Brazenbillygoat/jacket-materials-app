@@ -1,0 +1,6 @@
+<h1>Jackets</h1>
+<% @jackets.each do |jacket|%>
+  <p><%= link_to jacket.name, jacket_path(jacket) %></p>
+<% end %>
+
+
